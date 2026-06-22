@@ -1,4 +1,6 @@
 📊 Análisis de Segmentación de Clientes
+
+
 🎯 Objetivo del proyecto
 
 Este proyecto tiene como objetivo analizar el comportamiento de los clientes a partir de su uso del servicio (llamadas y mensajes), con el fin de:
