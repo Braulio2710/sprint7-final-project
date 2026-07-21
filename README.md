@@ -101,7 +101,7 @@ The following techniques were applied:
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/your-username/sprint7-final-project.git
+git clone https://github.com/Braulio2710/sprint7-final-project.git
 ```
 
 2. Install the required libraries.
