@@ -1,107 +1,134 @@
-📊 Análisis de Segmentación de Clientes
+# 📊 Sprint 7 Final Project – Customer Segmentation Analysis
 
+## 📌 Project Overview
 
-🎯 Objetivo del proyecto
+This project was completed as the final assignment for **Sprint 7** of the **TripleTen Data Analytics Bootcamp**.
 
-Este proyecto tiene como objetivo analizar el comportamiento de los clientes a partir de su uso del servicio (llamadas y mensajes), con el fin de:
+The objective was to analyze customer service usage patterns for a telecommunications company by exploring call and messaging behavior. The analysis focused on customer segmentation, outlier detection, and the generation of business insights to support data-driven decision-making.
 
-Identificar patrones de consumo
-Segmentar usuarios según nivel de uso y edad
-Detectar posibles comportamientos atípicos
-Generar insights útiles para decisiones de negocio
+---
 
+## 🎯 Business Objective
 
-📁 Datasets utilizados
+Identify customer usage patterns and behavioral segments by answering the following questions:
 
-El análisis se realizó utilizando un dataset de usuarios con las siguientes variables principales:
+* What are the main service usage patterns among customers?
+* Can customers be segmented based on their service consumption and age?
+* Are there unusual usage behaviors (outliers) that require further investigation?
+* What insights can support customer segmentation strategies?
 
-age: edad del usuario
-cant_llamadas: número de llamadas realizadas
-cant_mensajes: número de mensajes enviados
-cant_minutos_llamada: minutos totales de llamadas
+---
 
-Además, se construyó un dataset enriquecido (user_profile) con variables derivadas como:
+## 📂 Dataset
 
-grupo_uso (Bajo uso, Uso medio, Alto uso)
-grupo_edad (Joven, Adulto, Adulto Mayor)
+The analysis was performed using a telecommunications customer dataset containing service usage information.
 
+### Features
 
-🔍 Etapas del análisis
+| Column                  | Description                   |
+| ----------------------- | ----------------------------- |
+| `age`                   | Customer age                  |
+| `cant_llamadas`         | Number of phone calls         |
+| `cant_mensajes`         | Number of text messages       |
+| `total_minutos_llamada` | Total call duration (minutes) |
 
-El proyecto se desarrolló en las siguientes fases:
+An enriched dataset (`user_profile`) was also created, including:
 
-1. Exploración de datos (EDA)
-Identificación de valores nulos
-Revisión de estadísticos descriptivos (describe)
-Análisis de distribución de variables
-2. Detección de valores atípicos
-Uso del método IQR
-Identificación de posibles outliers en:
-llamadas
-mensajes
-minutos de llamada
-3. Segmentación de clientes
-Creación de variables categóricas:
-grupo_uso
-grupo_edad
-Clasificación basada en reglas de negocio
-4. Análisis de segmentación
-Cruce entre variables categóricas
-Tablas de contingencia
-Análisis de comportamiento por grupo
-5. Visualización de datos
-Gráficos de distribución con countplot
-Análisis visual de segmentos de clientes
+* `grupo_uso` (Low, Medium, High Usage)
+* `grupo_edad` (Young, Adult, Senior)
 
+---
 
-▶️ Cómo ejecutar el proyecto
+## 📈 Analysis Workflow
 
-Puedes ejecutar este proyecto de las siguientes formas:
+The project followed these main steps:
 
-📌 Opción 1: Google Colab (recomendado)
-Abre Google Colab: https://colab.research.google.com/
-Sube el archivo .ipynb
-Ejecuta las celdas en orden
+1. Data loading and validation
+2. Exploratory Data Analysis (EDA)
+3. Missing value analysis
+4. Outlier detection using the IQR method
+5. Customer segmentation
+6. Contingency table analysis
+7. Data visualization
+8. Business insights
 
+---
 
-📌 Opción 2: Jupyter Notebook local
-Instala dependencias:
+## 📊 Analytical Techniques
+
+The following techniques were applied:
+
+* Exploratory Data Analysis (EDA)
+* Descriptive Statistics
+* IQR Outlier Detection
+* Customer Segmentation
+* Contingency Tables
+* Data Visualization
+
+---
+
+## 📌 Key Findings
+
+* Adult customers showed the highest overall service usage.
+* Medium Usage was the dominant segment across all age groups.
+* Customer behavior varied noticeably between age segments.
+* The segmentation identified opportunities for targeted business strategies based on customer usage patterns.
+
+---
+
+## ⚠️ Limitations
+
+* The analysis is descriptive and does not establish causal relationships.
+* Customer segmentation was based on predefined business rules rather than machine learning techniques.
+* The dataset does not include revenue, churn, or customer lifetime value metrics.
+* No predictive models were developed in this project.
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+
+---
+
+## ▶️ How to Run
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/your-username/sprint7-final-project.git
+```
+
+2. Install the required libraries.
+
+```bash
 pip install pandas numpy matplotlib seaborn
-Abre Jupyter:
-jupyter notebook
-Abre el archivo .ipynb y ejecuta las celdas
+```
 
+3. Open the notebook using Jupyter Notebook, VS Code, or Google Colab.
 
-🔁 Guía de reproducción
+4. Run all cells from top to bottom.
 
-Para reproducir el análisis correctamente:
+---
 
-Cargar el dataset original en un DataFrame (user_profile)
-Ejecutar limpieza y validación de datos
-Generar variables derivadas (grupo_uso, grupo_edad)
-Realizar análisis descriptivo
-Construir visualizaciones
-Interpretar resultados por segmento
+## 📈 Future Improvements
 
+* Develop churn prediction models.
+* Apply clustering techniques such as K-Means for data-driven customer segmentation.
+* Incorporate Customer Lifetime Value (CLV) analysis.
+* Build interactive dashboards using Power BI or Tableau.
 
-📌 Resultados clave
-El segmento Adulto presenta mayor nivel de uso del servicio
-El grupo de Uso medio domina en todos los rangos de edad
-Existen diferencias claras de comportamiento entre edades
-Se identifican oportunidades de segmentación para estrategias de negocio
+---
 
+## 👨‍💻 Author
 
-🛠️ Tecnologías utilizadas
-Python 🐍
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Jupyter Notebook / Google Colab
+**Braulio Santiago Esquivel**
 
+Data Analyst | Database Administrator
 
-📈 Posibles mejoras futuras
-Modelos predictivos de churn
-Segmentación avanzada con clustering (K-Means)
-Análisis de valor de cliente (CLV)
-Dashboards interactivos (Power BI o Tableau)
+Currently expanding my skills in statistical analysis, business analytics, and machine learning through the TripleTen Data Analytics Bootcamp.
